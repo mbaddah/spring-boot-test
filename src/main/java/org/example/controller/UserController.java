@@ -5,12 +5,24 @@ import org.example.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
+import java.util.List;
+
 @RestController
 @RequestMapping("/users")
 public class UserController {
 
     @Autowired
     UserService userService;
+
+    @GetMapping("/")
+        public List<User> getUsers() {
+        return Arrays.asList(
+                new User(1, "John"),
+                new User(2, "Jane"),
+                new User(3, "Jack")
+        );
+    }
 
     @GetMapping("/{id}")
     public User getUserById(@PathVariable int id) {
