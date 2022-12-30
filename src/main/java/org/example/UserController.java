@@ -34,23 +34,5 @@ public class UserController {
     public void deleteUser(@PathVariable int id) {
         userService.deleteUser(id);
     }
-    //    @GetMapping("/users")
-    //    public List<User> getUsers() {
-    //        return Arrays.asList(
-    //                new User(1, "John"),
-    //                new User(2, "Jane"),
-    //                new User(3, "Jack")
-    //        );
-    //    }
-    //
-    //    @GetMapping("/")
-    //    public ResponseEntity<String> getResponseCode() {
-    //        return new ResponseEntity<>("Check response code 200", HttpStatus.OK);
-    //    }
-    //
-    //    @PostMapping("/user")
-    //    public void createUser() {
-    //        new User(4,"Mo");
-    //    }
 
 }

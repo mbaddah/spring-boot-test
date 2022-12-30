@@ -8,3 +8,8 @@ Basic web service using spring boot.
 * UserController - REST interface to business logic
 * USerService - Business logic
 * UserRepository - Entity bean storage
+
+TODO:
+- Complete mappings
+- Add H2 DB
+- Add tests/mocks
